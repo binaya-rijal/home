@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepali Birth Certificate Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Nepali Birth Certificate Generator</h1>
+    </header>
+    <main>
+        <form id="birth-certificate-form">
+            <label for="name">Infant Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="name">Date of Birth:</label>
+            <input type="Date" id="date" name="date" required><br><br>
+            <label for="birth-address">Birth Address:</label>
+            <input type="text" id="birth-address" name="birth-address" required><br><br>
+            <label for="father-name">Father's Name:</label>
+            <input type="text" id="father-name" name="father-name" required><br><br>
+            <label for="mother-name">Mother's Name:</label>
+            <input type="text" id="mother-name" name="mother-name" required><br><br>
+            <label for="grandfather-name">Grandfather's Name:</label>
+            <input type="text" id="grandfather-name" name="grandfather-name" required><br><br>
+            <button id="generate-certificate">Generate Certificate</button>
+        </form>
+        <div id="certificate-container">
+            <!-- Certificate will be generated here -->
+        </div>
+        <div id="download-container">
+            <!-- Download button will appear here -->
+        </div>
+    </main>
+    <footer>
+       <b> <p>&copy; 2024 Binaya & Team</p> </b>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
